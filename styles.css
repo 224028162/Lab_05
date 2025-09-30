@@ -87,29 +87,30 @@ p {
 .dark-theme .form-input,
 .dark-theme .form-select,
 .dark-theme .form-textarea {
-  /* TODO: Add dark theme form control styles */
-  /* HINT: Use background-color, color, and border-color */
+  background-color: var(--dark);
+  color: var(--light);
+  border: 1px solid var(--border-color);
 }
 
 .dark-theme .table th {
-  /* TODO: Add dark theme table header styles */
-  /* HINT: Use background-color */
+background-color: var(--dark);
 }
 
 .dark-theme .code-editor {
-  /* TODO: Add dark theme code editor styles */
-  /* HINT: Use background-color */
+background-color: var(--dark);
 }
 
 /* Card Styles */
 .card {
-  /* TODO: Add card styles */
-  /* HINT: Use background-color, border-radius, box-shadow, transition */
+background-color: var(--card-bg);
+border-radius: 10px;
+box-shadow: (var(--card-shadow));
+transition: var(--transition); 
 }
 
 .card:hover {
-  /* TODO: Add hover styles for card */
-  /* HINT: Use transform and box-shadow */
+transform: translateY(-5px);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-img {
