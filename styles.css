@@ -114,180 +114,221 @@ box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-img {
-  /* TODO: Add card image styles */
-  /* HINT: Set width, height, and object-fit */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-content {
-  /* TODO: Add card content styles */
-  /* HINT: Add padding */
+padding: 20px;
 }
 
 .card-title {
-  /* TODO: Add card title styles */
-  /* HINT: Set font-size, margin, and color */
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--dark);
 }
 
 .card-text {
-  /* TODO: Add card text styles */
-  /* HINT: Set color and margin */
+  color: var(--gray);
+  margin: auto;
 }
 
 /* Button Styles */
 .btn {
-  /* TODO: Add button styles */
-  /* HINT: Use display, padding, background-color, color, border, border-radius, cursor, transition */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--white);
+  border:rgba(0, 0, 0, 0.2)
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .btn:hover {
-  /* TODO: Add button hover styles */
-  /* HINT: Change background-color */
+ background-color: var(--secondary);
 }
 
 .btn-success {
-  /* TODO: Add success button styles */
-  /* HINT: Change background-color */
+ background-color: var(--success);
 }
 
 .btn-warning {
-  /* TODO: Add warning button styles */
-  /* HINT: Change background-color */
+ background-color: var(--warning);
 }
 
 .btn-info {
-  /* TODO: Add info button styles */
-  /* HINT: Change background-color */
+background-color: var(--info);
 }
 
 .btn-outline {
-  /* TODO: Add outline button styles */
-  /* HINT: Transparent background with border and specific text color */
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  text-emphasis-color: var(--primary);
 }
 
 .btn-outline:hover {
-  /* TODO: Add hover styles for outline button */
-  /* HINT: Change background-color and text color */
+background-color: var(--primary);
+color: var(--white);
 }
 
 .btn-group {
-  /* TODO: Add button group styles */
-  /* HINT: Use display and gap */
+display: flex;
+gap: 10px;
 }
 
 /* Chip Styles */
 .chips-container {
-  /* TODO: Add chips container styles */
-  /* HINT: Use display, flex-wrap, gap, and margin */
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin: 15px 0;
 }
 
 .chip {
-  /* TODO: Add chip styles */
-  /* HINT: Use display, align-items, padding, background-color, border-radius, font-size, color, and cursor */
+display: inline-flex;
+align-items: center;
+padding: 8px 16px;
+background-color: var(--light-gray);
+border-radius: 20px;
+font-size: 0.9rem;
+color: var(--dark);
+cursor: pointer;
 }
 
 .chip.active {
-  /* TODO: Add active chip styles */
-  /* HINT: Change background-color and color */
+background-color: var(--primary);
+color: var(--white);
 }
-
 .chip i {
-  /* TODO: Add icon styles within chips */
-  /* HINT: Use margin-right */
+margin-right: 8px;
+font-size: 1.1rem;
 }
 
 .chip .close {
-  /* TODO: Add close button styles within chips */
-  /* HINT: Use margin-left, cursor, and font-weight */
+margin-left: 8px;
+cursor: pointer;
+font-weight: bold;
 }
-
 /* Slider Styles */
 .slider-container {
-  /* TODO: Add slider container styles */
-  /* HINT: Use margin */
+margin: auto;
 }
 
 .slider {
-  /* TODO: Add slider styles */
-  /* HINT: Use appearance, width, height, border-radius, background, and outline */
+appearance:var(--transition);
+width: 100%;
+height: 8px;
+border-radius: 4px;
+background: var(--light-gray);
+outline: navy;
 }
-
 .slider::-webkit-slider-thumb {
-  /* TODO: Add slider thumb styles */
-  /* HINT: Use appearance, width, height, border-radius, background, cursor, and transition */
+appearance: none;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: var(--primary);
+cursor: pointer;
+transition: var(--transition);
 }
 
 .slider::-webkit-slider-thumb:hover {
-  /* TODO: Add hover styles for slider thumb */
-  /* HINT: Use background and transform */
+background: var(--secondary);
+transform: scale(1.1);
 }
 
 .slider-value {
-  /* TODO: Add slider value styles */
-  /* HINT: Use text-align, font-weight, and color */
+text-align: center;
+font-weight: 600;
+color: var(--primary);
+margin-top: 5px;
 }
 
 /* Switch Styles */
 .switch-container {
-  /* TODO: Add switch container styles */
-  /* HINT: Use display, align-items, and margin */
+display: flex;
+align-items: center;
+margin: 15px 0;
 }
 
 .switch {
-  /* TODO: Add switch styles */
-  /* HINT: Use position, display, width, height, and margin-right */
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+margin-right: 10px;
 }
 
 .switch input {
-  /* TODO: Add switch input styles */
-  /* HINT: Use opacity, width, and height */
+opacity: 0;
+width: 0;
+height: 0;
 }
 
 .slider-round {
-  /* TODO: Add slider round styles */
-  /* HINT: Use position, cursor, top/left/right/bottom properties, background-color, transition, and border-radius */
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: var(--light-gray);
+transition: var(--transition);
+border-radius: 34px;
 }
 
 .slider-round:before {
-  /* TODO: Add slider round before element styles */
-  /* HINT: Use position, content, height, width, left, bottom, background-color, transition, and border-radius */
+position: absolute;
+content: "";
+height: 16px;
+width: 16px;
+left: 4px;
+bottom: 4px;
+background-color: var(--white);
+transition: var(--transition);
+border-radius: 50%;
 }
 
 input:checked + .slider-round {
-  /* TODO: Add checked slider round styles */
-  /* HINT: Change background-color */
+background-color: var(--primary);
 }
 
 input:checked + .slider-round:before {
-  /* TODO: Add checked slider round before element styles */
-  /* HINT: Use transform with translateX */
+transform: translateX(26px);
 }
 
 /* List Styles */
 .list {
-  /* TODO: Add list styles */
-  /* HINT: Use list-style-type, background-color, border-radius, overflow, and box-shadow */
+list-style-type: none;
+background-color: var(--card-bg);
+border-radius: var(--border-radius);
+overflow: hidden;
+box-shadow: var(--card-shadow);
 }
 
 .list-item {
-  /* TODO: Add list item styles */
-  /* HINT: Use padding, border-bottom, display, align-items, cursor, and transition */
+padding: 15px 20px;
+border-bottom: 1px solid var(--border-color);
+display: flex;
+align-items: center;
+cursor: pointer;
+transition: var(--transition);
 }
 
 .list-item:last-child {
-  /* TODO: Add styles for last list item */
-  /* HINT: Remove border-bottom */
+border-bottom: none;
 }
 
 .list-item:hover {
-  /* TODO: Add hover styles for list items */
-  /* HINT: Change background-color */
+background-color: rgba(67, 97, 238, 0.1);
 }
 
 .list-item i {
-  /* TODO: Add icon styles in list items */
-  /* HINT: Use margin-right and color */
+margin-right: 15px;
+color: var(--primary);
 }
-
 .list-item .avatar {
   /* TODO: Add avatar styles in list items */
   /* HINT: Use width, height, border-radius, margin-right, and object-fit */
