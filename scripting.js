@@ -695,3 +695,4 @@ function trackMood(emoji) {
   document.getElementById("mood-response").textContent = responses[emoji];
   showToast(`Mood set to ${emoji}`, "success");
 }
+
